@@ -1,0 +1,351 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color:  #e6e6e6;
+}
+
+img{
+	max-width: 100%;
+}
+
+main{
+	width: 1170px;
+	max-width: 0 auto;
+	background-color: #fff;
+}
+
+
+nav{
+	position: relative;
+}
+
+nav img.logo{
+	display: inline-block;
+	margin-left: 34px;
+	width: 200px;
+	margin-top: 22px;
+	margin-bottom: 17px;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: absolute;
+	right: 60px;
+	width: 44px;
+	top: 44px;
+}
+
+@media (max-width: 414px) {
+	nav ul{
+		display: none;
+	}
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #000;
+	font-weight: 700;
+}
+
+nav ul li:last-child a {
+	text-transform: uppercase;
+	border-bottom: 2px solid #bcf6ff;
+	padding: 0 2px;
+}
+
+nav.alt ul li{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	right: 60px;
+	width: auto;
+	top: 44px;
+}
+
+nav.alt ul li{
+	display: inline-block;
+	margin-left: 90px;
+}
+
+header img {
+	max-width: 100%;
+}
+
+section.intro{
+	padding: 32px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+section.intro article {
+	width: 65.5%;
+}
+
+section.intro aside {
+	width: 31%;
+}
+
+@media (max-width: 414px) {
+	section.intro article, section.intro aside{
+		width: 100%;
+	}
+}
+
+section.intro h1{
+	font-size: 40px;
+	font-family: 'librebaskerville', serif;
+	font-style: italic;
+	font-weight: 600;
+	margin-top: 7px;
+	margin-bottom: 0;
+}
+
+@media (max-width: 414px) {
+	section.intro h1{
+		font-size: 28px;
+	}
+}
+
+section.intro p.lead{
+	font-size: 23px;
+	line-height: 1.45;
+	font-weight: 300;
+}
+
+@media (max-width: 414px) {
+	section.intro p.lead{
+		font-size: 18px;
+	}
+}
+
+
+section.intro p{
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.45;
+}
+
+section.intro article img {
+	float: left;
+	margin-right: 15px;
+	width: 337px;
+}
+
+@media (max-width: 414px) {
+	section.intro article img {
+		display: none;
+	}
+}
+
+section.intro aside .tickets {
+	margin-top: 80px;
+}
+
+@media (max-width: 414px) {
+	section.intro aside {
+		margin-top: 20px;
+	}
+}
+
+section.intro aside .tickets {
+	background-color: #022f66;
+	padding: 20px;
+	color: #fff;
+	padding-bottom: 30px;
+}
+
+section.intro aside h2 {
+	font-weight: 300;
+	text-align: center;
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+section.intro aside img {
+	max-width: 65%;
+	margin: 0 auto;
+	display: block;
+}
+
+section.intro aside ul {
+	font-weight: 500;
+	margin-top: 40px;
+}
+
+section.intro aside ul li {
+	margin-bottom: 7px;
+}
+
+section.intro aside .notice {
+	position: relative;
+	background-color: #f2f2f2;
+	padding: 20px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+@media (max-width: 414px) {
+	section.intro aside .notice {
+		display: none;
+	}
+}
+
+section.intro aside .notice.hide {
+	display: none;
+}
+
+section.intro aside .notice .close{
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	font-size: 30px;
+	cursor: pointer;
+	font-weight: 100;
+}
+
+section.reviews {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 30px;
+}
+
+@media (max-width: 414px) {
+	section.review {
+		flex-direction: column-reverse;
+	}
+}
+
+section.reviews > div, section.review article {
+	width: 48%;
+	position: relative;
+}
+
+@media (max-width: 414px) {
+	section.review > div, section.reviews article {
+		width: 100%;
+	}
+}
+
+section.reviews article h3 {
+	position: absolute;
+	top: -50px;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+@media (max-width: 414px) {
+	section.review article h3 {
+		display: none
+	}
+}
+
+section.reviews article blockquote {
+	margin: 0;
+	padding: 0;
+	font-size : 28px;
+	line-height: 1.3;
+	font-style: italic;
+	width: 450px;
+	max-width: 100%;
+	margin-bottom : 30px;
+}
+
+section.reviews article blockquote cite {
+	display: block;
+	font-size: 14px;
+	font-weight: 700;
+	margin-top: 20px;
+	font-style: normal;
+}
+
+section.reviews article p {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.45;
+}
+
+
+section.cta {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 30px;
+	padding-bottom: 60px;
+}
+
+@media (max-width: 414px) {
+	section.cta {
+		padding-bottom: 30px;
+	}
+}
+
+section.cta > div {
+	background-color: #dac7a6;
+	width: 29%;
+	color: #fff;
+	text-align: center;
+	position: relative;
+}
+
+@media (max-width: 414px) {
+	section.cta > div {
+		width: 100%;
+		margin-bottom : 30px;
+	}
+}
+
+section.cta > div h4 {
+	font-weight: 900;
+	font-size: 35px;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
+section.cta > div > .sale {
+	position: absolute;
+	top: -10px;
+	right: -25px;
+	color:  #1e496b;
+	background-color: #d3e8f9;
+	padding: 5px 14px 4px;
+	border-radius :10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+}
+
+
+footer {
+	background-color: #4e7592;
+	text-align: center;
+	padding-top: 20px;
+	color: #fff;
+	padding-bottom: 40px;
+}
+
+footer p {
+	margin: 0;
+	opacity: 0.6;
+	font-size: 16px;
+	font-weight: 500;
+}
